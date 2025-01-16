@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(45deg, #01191d, #388eff); 
+            color: #001325;
+            min-height: 100vh;
+        }
+        nav {
+            background-color: #001b2b;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: rgb(255, 255, 255);
+            margin: 10px;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #011a2e;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            background-color: #000f61;
+        }
+        section {
+            display: none;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #9ecbff; 
+        }
+        section.active {
+            display: block;
+        }
+        .return-home {
+            margin-top: 20px;
+            display: inline-block;
+            background-color: #4000ff;
+            color: rgb(238, 168, 255);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .return-home:hover {
+            background-color: #522bff;
+        }
+
+        .container {
+            flex-wrap: wrap; 
+            margin: 20px auto;
+            width: 80%;
+            gap: 20px; 
+        }
+
+        .content {
+            flex: auto; 
+            text-align: left; 
+        }
+
+        .pic {
+            flex: 0 0 auto; 
+            margin-left: 50px; 
+            justify-content: right;
+            display: flex;
+            align-items: flex-start; 
+            justify-content: space-evenly; 
+        }
+
+        .pic img {
+            width: 150px; 
+            height: auto;
+            display: block; 
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-gallery a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" onclick="showSection('home')">HOME</a>
+        <a href="#" onclick="showSection('resume')">RESUME</a>
+        <a href="#" onclick="showSection('myself')">MYSELF</a>
+        <a href="#" onclick="showSection('myfamily')">MY FAMILY</a>
+        <a href="#" onclick="showSection('favorite')">MY FAVORITE</a>
+        <a href="#" onclick="showSection('myworks')">MY WORKS</a>
+    </nav>
+
+    <section id="home" class="active">
+        <h1>Welcome to My Webpage</h1>
+        <p>Click a section to explore more about me!</p>
+        <iframe src="https://drive.google.com/file/d/1ukClLKflJ1pZfzz7LCyH7K-9NzXxU6xU/preview" width="640" height="480" allow="autoplay"></iframe>
+    </section>
+
+    <section id="resume">
+        <h1>My Resume</h1>
+        <div class="pic">
+            <img src="Gerard.jpg" alt="Gerard's Picture">
+        </div>
+        <div class="content">
+            <p><strong>GERARD DUSTIN M. BELTRAN</strong></p>
+            <p>Malagasang 1-B, Imus Cavite, Celina Plains Imus <br>
+            Blk 12 Lot 29 Phase 1 Molave Street <br>
+            Contact No.: +639619698817 <br>
+            Email: beltrangerarddustin04@gmail.com</p>
+            <hr>
+            <h2>OBJECTIVES</h2>
+            <p>To obtain significant expertise and skills in addition to those that I acquired from school in a real-life work setting. In exchange, I'll provide my assistance and willingness to be an additional resource for your company.</p>
+            <h2>PERSONAL INFORMATION</h2>
+            <ul>
+                <li>18 years old</li>
+                <li>Male</li>
+                <li>Catholic</li>
+                <li>January 4, 2006</li>
+                <li>Single</li>
+                <li>Filipino</li>
+            </ul>
+            <h2>EDUCATIONAL BACKGROUND</h2>
+            <ul>
+                <li><strong>Tertiary:</strong> Cavite State University Imus Campus, Cavite Civic Center, Palico IV, Imus, 2024 – present</li>
+                <li><strong>Secondary:</strong> Southern Philippines Institute of Science and Technology Carsadang Bago campus Blk 9 Lot 5, NIA Road, Carsadang Bago II, Imus City, Cavite 2022 – 2024</li>
+                <li><strong>Secondary:</strong> Imus National High School – Main Bukandala III, Imus City, Cavite, 2018 - 2022</li>
+                <li><strong>Primary:</strong> Malagasang 1 Elementary School, Malagasang 1-C, Imus City, Cavite 2012 – 2018</li>
+            </ul>
+            <h2>AREAS OF EXPERTISE</h2>
+            <ul>
+                <li>Documenting</li>
+                <li>Time management</li>
+                <li>Computer literate: Microsoft Word</li>
+                <li>Good at basketball</li>
+            </ul>
+            <h2>SKILLS & PROFICIENCIES</h2>
+            <ul>
+                <li>Can manage multitasking and eager to learn</li>
+                <li>Knowledge about the internet</li>
+                <li>Decision making</li>
+                <li>Good communication</li>
+                <li>Superb student management skills</li>
+            </ul>
+            <h2>CHARACTER REFERENCE</h2>
+            <p><strong>Gerardo M. Beltran</strong><br>Electrical Engineer<br>Contact No.: +639294995478<br>5/F SBSI Bldg. 6023 Sacred Heart St. Corner Kamagong St., San Antonio, Makati City</p>
+            <p><i>I hereby certify that all of the above information is true and correct with all my knowledge and belief.</i></p>
+            <p><strong>Gerard Dustin M. Beltran</strong><br>Applicant</p>
+        </div>
+        <a href="#" onclick="showSection('home')" class="return-home">Return to HOME</a>
+    </section>
+
+    <section id="myself">
+        <h1>About Myself</h1>
+        <div class="content">
+            <p><strong>Full Name:</strong> Gerard Dustin M. Beltran</p>
+            <p><strong>Nickname(s):</strong> Jed or Jed-jed</p>
+            <p><strong>Date of Birth:</strong> January 4, 2006</p>
+            <p><strong>Location:</strong> Malagasang 1-B, Imus Cavite, Celina Plains Imus, Blk 12 Lot 29 Phase 1 Molave Street</p>
+            <hr>
+            <h2>Personal Description</h2>
+            <p>I am a creative, ambitious, and compassionate person who enjoys exploring new ideas and connecting with people. I have a passion for writing and storytelling, and I believe in the power of empathy and growth. My friends would describe me as curious, supportive, and always up for an adventure.</p>
+            <h2>Education & Career</h2>
+            <p><strong>Current Occupation:</strong> College student pursuing a Bachelor of Science in Computer Science (BSCS). Focused on software development and programming.</p>
+            <p><strong>Field of Study:</strong> Computer Science, studying topics like programming, algorithms, and data structures.</p>
+            <p><strong>Skills & Expertise:</strong> Proficient in Java, Python, and C++, with experience in web development and app development. Also learning machine learning and AI.</p>
+            <h2>Hobbies & Interests</h2>
+            <ul>
+                <li>Playing basketball</li>
+                <li>Listening to music</li>
+            </ul>
+            <<div class="image-gallery">
+                <a href="image 15.jpg" target="_blank"><img src="image 15.jpg" alt="Image 15"></a>
+                <a href="image 24.jpg" target="_blank"><img src="image 24.jpg" alt="Image 24"></a>
+                <a href="image 16.jpg" target="_blank"><img src="image 16.jpg" alt="Image 16"></a>
+            </div>
+            <h2>Goals & Aspirations</h2>
+            <p>Graduating with honors and becoming a software developer or data scientist, while contributing to innovative tech projects and solving real-world problems.</p>
+            <h2>Fun Facts</h2>
+            <ul>
+                <li>Been playing basketball since childhood.</li>
+                <li>Wants to learn cooking.</li>
+            </ul>
+        </div>
+        <a href="#" onclick="showSection('home')" class="return-home">Return to HOME</a>
+    </section>
+
+    <section id="myfamily">
+        <h1>My Family</h1>
+        <div class="content">
+            <h2>Family Overview</h2>
+            <p>I come from a close-knit family that has always been supportive and caring. We value core family values like love, respect, trust, and enjoy spending quality time together. Our family dynamic is built on humor, open communication, and adventure. We always make time for each other, even in the busyness of life.</p>
+
+            <h2>Family Members</h2>
+            <<div class="image-gallery">
+                <a href="image 26.jpg" target="_blank"><img src="image 26.jpg" alt="Image 26"></a>
+                <a href="image 30.jpg" target="_blank"><img src="image 30.jpg" alt="Image 30"></a>
+                <a href="image 28.jpg" target="_blank"><img src="image 28.jpg" alt="Image 28"></a>
+                <a href="image 25.jpg" target="_blank"><img src="image 25.jpg" alt="Image 25"></a>
+            </div>
+
+            <h2>Family Memories</h2>
+            <p>Some of my most cherished memories with my family include our road trips to the beach every summer. We would pack the car with snacks, play music, and sing along on the drive. Once we got there, we’d spend the whole day swimming, playing beach volleyball, and building sandcastles. Our time together always feels like an adventure, no matter where we go.</p>
+
+            <h2>Family Values</h2>
+            <p>We believe in honesty, kindness, and perseverance. We always try to speak openly with each other and work through challenges together. Family is everything to us, and we strive to support each other no matter the circumstances.</p>
+        </div>
+        </div>
+        <a href="#" onclick="showSection('home')" class="return-home">Return to HOME</a>
+    </section>
+
+    <section id="myfamily">
+        <h1>My Family</h1>
+        <div class="content">
+            <!-- Content about Family -->
+        </div>
+        <a href="#" onclick="showSection('home')" class="return-home">Return to HOME</a>
+    </section>
+
+    <section id="favorite">
+        <h1>My Favorites</h1>
+        <div class="content">
+            <h2>Hobbies & Interests</h2>
+            <ul>
+                <li><strong>Basketball:</strong> I love playing basketball—it’s my favorite way to stay active and have fun. I’ve been playing since I was a child and continue to play in my free time.</li>
+                <li><strong>Eating:</strong> I’m a huge foodie and love trying out new dishes. From street food to gourmet meals, I enjoy the experience of tasting different flavors.</li>
+                <li><strong>Reading:</strong> I enjoy fiction, mysteries, and self-improvement books. I love losing myself in a good story or learning something new from non-fiction.</li>
+                <li><strong>Music:</strong> I listen to pop, hip hop, indie, and R&B. Music has always been an important part of my life, whether I’m listening to it for relaxation or motivation.</li>
+            </ul>
+
+            <div class="image-gallery">
+                <a href="image 13.jpg" target="_blank"><img src="image 13.jpg" alt="Image 13"></a>
+                <a href="image 21.jpg" target="_blank"><img src="image 21.jpg" alt="Image 21"></a>
+                <a href="image 22.jpg" target="_blank"><img src="image 22.jpg" alt="Image 22"></a>
+                <a href="image 14.jpg" target="_blank"><img src="image 14.jpg" alt="Image 14"></a>
+            </div>
+            <h2>Favorite Things</h2>
+
+            <ul>
+                <li><strong>Favorite Foods:</strong> Chocolate, cake, spicy ramen, hot wings, and spicy curries. I love food that has a bit of a kick to it!</li>
+                <li><strong>Favorite Basketball Shoes:</strong> Nike Air Jordans, Adidas Harden Vol. series. I love the style, comfort, and performance of these shoes when I play.</li>
+                <li><strong>Favorite Person:</strong> My girlfriend, who supports me and makes me smile every day. She is my biggest cheerleader and the best part of my life.</li>
+                <li><strong>Favorite Activity:</strong> Spending time with friends and family. Whether it’s playing sports or simply hanging out, the people I care about are my greatest treasure.</li>
+            </ul>
+        </div>
+        <a href="#" onclick="showSection('home')" class="return-home">Return to HOME</a>
+    </section>
+
+    <section id="myworks">
+        <h1>My Works</h1>
+        <div class="content">
+
+            <div class="image-gallery">
+                <a href="image 1.png" target="_blank"><img src="image 1.png" alt="Image 1"></a>
+                <a href="image 2.png" target="_blank"><img src="image 2.png" alt="Image 2"></a>
+                <a href="image 3.png" target="_blank"><img src="image 3.png" alt="Image 3"></a>
+                <a href="image 4.png" target="_blank"><img src="image 4.png" alt="Image 4"></a>
+                <a href="image 5.png" target="_blank"><img src="image 5.png" alt="Image 5"></a>
+                <a href="image 6.png" target="_blank"><img src="image 6.png" alt="Image 6"></a>
+                <a href="image 7.png" target="_blank"><img src="image 7.png" alt="Image 7"></a>
+                <a href="image 8.png" target="_blank"><img src="image 8.png" alt="Image 8"></a>
+                <a href="image 9.png" target="_blank"><img src="image 9.png" alt="Image 9"></a>
+                <a href="image 10.png" target="_blank"><img src="image 10.png" alt="Image 10"></a>
+                <a href="image 11.png" target="_blank"><img src="image 11.png" alt="Image 11"></a>
+                <a href="image 12.png" target="_blank"><img src="image 12.png" alt="Image 12"></a>
+                <a href="image 17.png" target="_blank"><img src="image 17.png" alt="Image 17"></a>
+                <a href="image 18.png" target="_blank"><img src="image 18.png" alt="Image 18"></a>
+            </div>
+        </div>
+        <a href="#" onclick="showSection('home')" class="return-home">Return to HOME</a>
+    </section>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
+
+    
